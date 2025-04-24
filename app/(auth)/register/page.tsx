@@ -28,7 +28,7 @@ function page() {
             tempore nesciunt sit quo nobis sunt, cum nam facilis doloremque
             laboriosam expedita?
           </p>
-          <Button type="outline">Sign in Account ?</Button>
+          <Button varient="outline">Sign in Account ?</Button>
         </div>
       </div>
       <div className="w-2/4 flex h-screen items-center justify-center">
@@ -47,10 +47,10 @@ function page() {
             <Button>Register</Button>
           </div>
           <div className=" flex items-center space-x-3">
-            <Button type="outline" icon={google}>
+            <Button varient="outline" icon={google}>
               Sign In With Google
             </Button>
-            <Button type="outline" icon={github}>
+            <Button varient="outline" icon={github}>
               Sign In With GitHub
             </Button>
           </div>

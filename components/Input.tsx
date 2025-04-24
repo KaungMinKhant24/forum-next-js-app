@@ -8,7 +8,7 @@ function Input({ placeholder, label }: TInput) {
       {label && <label htmlFor="">{label}</label>}
 
       <input
-        type="text"
+        varient="text"
         className="w-full mt-3  rounded-md bg-[#081338] px-4 py-2"
         placeholder={placeholder}
       />

@@ -3,17 +3,19 @@ import React from "react";
 
 function Button({
   children,
-  type = "normal",
+  varient = "normal",
   icon,
+  ...props
 }: {
   children: React.ReactNode;
-  type?: "normal" | "outline";
+  varient?: "normal" | "outline";
   icon?: string | StaticImageData;
-}) {
+} & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button
+      {...props}
       className={`px-4 py-2 w-full rounded-md cursor-pointer
-    ${type === "normal" ? " bg-[#0092EF]" : "border-2 border-[#0092EF]"}
+    ${varient === "normal" ? " bg-[#0092EF]" : "border-2 border-[#0092EF]"}
     ${icon && " flex  items-center justify-center   space-x-2"}
     `}
     >

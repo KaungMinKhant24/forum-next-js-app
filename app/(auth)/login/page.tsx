@@ -2,9 +2,9 @@ import Image from "next/image";
 
 import logo from "@/public/logo.jpg";
 import Input from "@/components/Input";
-import google from "@/public/google.webp";
-import github from "@/public/github.png";
+
 import Button from "@/components/Button";
+import AuthForm from "../components/AuthForm";
 function page() {
   return (
     <div className="flex">
@@ -28,7 +28,7 @@ function page() {
             tempore nesciunt sit quo nobis sunt, cum nam facilis doloremque
             laboriosam expedita?
           </p>
-          <Button type="outline">Create a new Account?</Button>
+          <Button varient="outline">Create a new Account?</Button>
         </div>
       </div>
       <div className="w-2/4 flex h-screen items-center justify-center">
@@ -44,14 +44,7 @@ function page() {
           <div>
             <Button>Login</Button>
           </div>
-          <div className=" flex items-center space-x-3">
-            <Button type="outline" icon={google}>
-              Sign In With Google
-            </Button>
-            <Button type="outline" icon={github}>
-              Sign In With GitHub
-            </Button>
-          </div>
+          <AuthForm />
         </div>
       </div>
     </div>
