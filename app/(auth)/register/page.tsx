@@ -4,6 +4,7 @@ import logo from "@/public/logo.jpg";
 import Input from "@/components/Input";
 import google from "@/public/google.webp";
 import github from "@/public/github.png";
+import Button from "@/components/Button";
 function page() {
   return (
     <div className="flex">
@@ -27,9 +28,7 @@ function page() {
             tempore nesciunt sit quo nobis sunt, cum nam facilis doloremque
             laboriosam expedita?
           </p>
-          <button className=" px-2 py-1 border-2 w-full rounded-md cursor-pointer ">
-            Create a new Account ?
-          </button>
+          <Button type="outline">Sign in Account ?</Button>
         </div>
       </div>
       <div className="w-2/4 flex h-screen items-center justify-center">
@@ -39,35 +38,21 @@ function page() {
             Forum
           </h1>
           <div className="">
+            <Input placeholder="Name" label="Name" />
+            <Input placeholder="UserName" label="UserName" />
             <Input placeholder="Email Address" label="Email Address" />
             <Input placeholder="Password" label="Password" />
           </div>
           <div>
-            <button className=" px-2 py-1 w-full  font-se bg-[#0092EF] rounded-md cursor-pointer ">
-              Login
-            </button>
+            <Button>Register</Button>
           </div>
           <div className=" flex items-center space-x-3">
-            <div className=" flex w-full items-center justify-center rounded-md border-2 border-[#0092EF] px-2 py-1 space-x-2">
-              <Image
-                src={google}
-                width={25}
-                height={25}
-                className="aspect-square rounded-full object-cover"
-                alt="google"
-              />
-              <p>Sign in with google</p>
-            </div>
-            <div className=" flex w-full items-center justify-center rounded-md border-2 border-[#0092EF] px-2 py-1 space-x-2">
-              <Image
-                src={github}
-                width={25}
-                height={25}
-                className="aspect-square rounded-full object-cover"
-                alt="github"
-              />
-              <p>Sign in with Github</p>
-            </div>
+            <Button type="outline" icon={google}>
+              Sign In With Google
+            </Button>
+            <Button type="outline" icon={github}>
+              Sign In With GitHub
+            </Button>
           </div>
         </div>
       </div>

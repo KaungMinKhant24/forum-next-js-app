@@ -12,7 +12,7 @@ function Button({
 }) {
   return (
     <button
-      className={`px-2 py-1 w-full rounded-md cursor-pointer
+      className={`px-4 py-2 w-full rounded-md cursor-pointer
     ${type === "normal" ? " bg-[#0092EF]" : "border-2 border-[#0092EF]"}
     ${icon && " flex  items-center justify-center   space-x-2"}
     `}
