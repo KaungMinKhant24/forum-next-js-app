@@ -3,6 +3,7 @@ import React from "react";
 
 import logo from "../public/logo.jpg";
 import profile from "../public/profile.jpg";
+import Input from "./Input";
 
 function Navbar() {
   return (
@@ -16,15 +17,11 @@ function Navbar() {
           alt="logo"
         />
         <h1 className="font-bold">
-          Creative <span className="text-main">Coder</span>
+          Creative <span className="text-[#0092EF]">Coder</span>
         </h1>
       </div>
-      <div>
-        <input
-          type="text"
-          className="w-[600px] rounded-md bg-primary px-4 py-2"
-          placeholder="search anything globally"
-        />
+      <div className=" w-[600px]">
+        <Input placeholder="search anything globally" />
       </div>
 
       <div>

@@ -16,7 +16,7 @@ function LeftSidebar() {
               <span>Home</span>
             </Link>
           </li>
-          <li className="rounded-xl bg-bg-[#081338] p-3">
+          <li className="rounded-xl bg-[#081338] p-3">
             <Link
               href={"/"}
               className="flex items-center space-x-4 text-[16px] font-bold"
@@ -25,7 +25,7 @@ function LeftSidebar() {
               <span>Tags</span>
             </Link>
           </li>
-          <li className="rounded-xl bg-bg-[#081338] p-3">
+          <li className="rounded-xl bg-[#081338] p-3">
             <Link
               href={"/"}
               className="flex items-center space-x-4 text-[16px] font-bold"
