@@ -1,9 +1,13 @@
 import { auth } from "@/auth";
 
-async function page() {
+async function page({
+  searchParams,
+}: {
+  searchParams: Promise<{ search: string | undefined }>;
+}) {
   let session = await auth();
-  console.log("page seesion", session);
-  return <>{session?.user?.name}</>;
+  let { search } = await searchParams;
+  return <>{search}</>;
 }
 
 export default page;
