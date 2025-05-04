@@ -13,7 +13,7 @@ function Input({
       <input
         {...props}
         varient="text"
-        className="w-full mt-3  rounded-md bg-[#081338] px-4 py-2"
+        className="w-full mt-3  rounded-md bg-[#081338] px-4 py-3"
         placeholder={placeholder}
       />
     </div>
